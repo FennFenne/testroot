@@ -53,9 +53,6 @@ img.center {
   overflow-x: hidden;
   
 }
-@media screen and (max-width: 600px) {
-  .leftbar {width: 70px;}
-}
 
 .rightbar {
     height: 100%;
@@ -67,4 +64,9 @@ img.center {
   background-color: forestgreen;
   overflow-x: hidden;
   
+}
+
+@media screen and (max-width: 600px) {
+  .leftbar {width: 70px;}
+  .rightbar {width: 70px;}
 }
