@@ -1,6 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+    background-color: #d2e7d6;
+    text-align: center;
+    font-family: "FenneFont";
 }
 p {
     color: purple;
@@ -25,13 +28,43 @@ img.center {
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
-  height: 120px;
+  height: 140px;
 }
 
 #bannerimg {
     background-image: url("./images/summersunsetbannerig.png");
     width: 100%;
-  height: 100px;
+
+    top: 0;
+    
+  height: 120px;
   background-color: purple;
   background-position: center;
+}
+
+.leftbar {
+    height: 100%;
+  width: 120px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: forestgreen;
+  overflow-x: hidden;
+  
+}
+@media screen and (max-width: 600px) {
+  .leftbar {width: 70px;}
+}
+
+.rightbar {
+    height: 100%;
+  width: 120px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: forestgreen;
+  overflow-x: hidden;
+  
 }
