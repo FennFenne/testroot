@@ -34,6 +34,13 @@ h1 {
     font-weight: 6000;
     background-color: white;
 }
+h1.smaller {
+  font-size: 265%;
+}
+
+p.smaller {
+  font-size: 150%;
+}
 
 img.resize {
   display: block;
