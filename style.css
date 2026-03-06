@@ -61,6 +61,16 @@ img.center {
   left: 11%;
 }
 
+#printer {
+  width: 150px;
+  height: 40px;
+  font-size: 150%;
+  border: 3px solid black;
+  font-weight: bolder;
+  background-color: white;
+  z-index: 1;
+}
+
 #bannerimg {
     background-image: url("./images/summersunsetbannerig.png");
     width: 100%;
