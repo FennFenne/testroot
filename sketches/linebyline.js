@@ -7,7 +7,7 @@
 */
 
 let bliss;
-let chosenImg;
+let chosenImg = [];
 //lower number for prec means HIGHER precision. 1 is "ultra precise", 1000 is "next to no precision"
 let prec = 200;
 let modR = [];
@@ -22,6 +22,11 @@ let nix;
 let union;
 let helpme = "bliss";
 let start;
+let choice = 0;
+let blissId;
+let vaporId;
+let nixId;
+let unionId;
 
 function preload() {
  bliss = loadImage('Bliss.png');
@@ -36,16 +41,16 @@ function setup() {
   background(255)
   slider = document.getElementById("myRange");
 sliderVal = slider.value;
-bliss = document.getElementById("bl");
-vapor = document.getElementById("va");
-nix = document.getElementById("nix");
-union = document.getElementById("oh");
+blissId = document.getElementById("bl");
+vaporId = document.getElementById("va");
+nixId = document.getElementById("nix");
+unionId = document.getElementById("oh");
 start = document.getElementById("start");
 
-bliss.addEventListener("click", Bliss);
-vapor.addEventListener("click", Vaporwave);
-nix.addEventListener("click", Nix);
-union.addEventListener("click", Union);
+blissId.addEventListener("click", Bliss);
+vaporId.addEventListener("click", Vaporwave);
+nixId.addEventListener("click", Nix);
+unionId.addEventListener("click", Union);
 start.addEventListener("click", Runner);
 
 }
