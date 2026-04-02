@@ -21,6 +21,7 @@ let vapor;
 let nix;
 let union;
 let helpme = "bliss";
+let start;
 
 function preload() {
  bliss = loadImage('Bliss.png');
@@ -39,11 +40,14 @@ bliss = document.getElementById("bl");
 vapor = document.getElementById("va");
 nix = document.getElementById("nix");
 union = document.getElementById("oh");
+start = document.getElementById("start");
 
 bliss.addEventListener("click", Bliss);
 vapor.addEventListener("click", Vaporwave);
 nix.addEventListener("click", Nix);
 union.addEventListener("click", Union);
+start.addEventListener("click", Runner);
+
 }
 
 function draw() {
@@ -102,3 +106,9 @@ helpme = "union";
 
 }
 
+function Runner() {
+  isRunning = true;
+  prec = sliderVal;
+    document.getElementById('start').remove();
+
+}
