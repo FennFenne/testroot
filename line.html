@@ -11,11 +11,16 @@
  <!--   <div class="leftbar"></div>
 <div class="rightbar"></div>-->
 <h1>Image Simplifier</h1>
-<p>Placeholder<br>Placeholder</p>
+<p>Choose the image you wish to simplify.<br>Use the slider to increase or decrease its precision.</p>
 <div id="home"></div>
 <div class="slidecontainer">
-  <input type="range" min="100" max="1000" value="400" class="slider" id="myRange">
+  <input type="range" min="100" max="1000" list="snap-points" value="400" class="slider" id="myRange">
 </div>
+<datalist id="snap-points">
+    <option value="200"></option>
+    <option value="400"></option>
+    <option value="800"></option>
+</datalist>
 <div class="container">
 <button class="linechoice"><img class="thumb" id="bl" src="./images/Bliss.png"></button>
 <button class="linechoice"><img class="thumb" id="va" src="./images/vaporwave.png"></button>
