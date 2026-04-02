@@ -35,7 +35,7 @@ function setup() {
   background(255)
   slider = document.getElementById("myRange");
 sliderVal = slider.value;
-/*bliss = document.getElementById("bl");
+bliss = document.getElementById("bl");
 vapor = document.getElementById("va");
 nix = document.getElementById("nix");
 union = document.getElementById("oh");
@@ -43,10 +43,10 @@ union = document.getElementById("oh");
 bliss.addEventListener("click", Bliss);
 vapor.addEventListener("click", Vaporwave);
 nix.addEventListener("click", Nix);
-union.addEventListener("click", Union);*/
+union.addEventListener("click", Union);
 }
 
-/*function draw() {
+function draw() {
   if (isRunning == true){
   background(220);
   image(chosenImg, 0, 0);
@@ -101,4 +101,4 @@ helpme = "union";
   chosenImg = union;
 
 }
-*/
+
