@@ -7,7 +7,7 @@
 */
 
 let bliss;
-let chosenImg = [];
+let chosenImg;
 //lower number for prec means HIGHER precision. 1 is "ultra precise", 1000 is "next to no precision"
 let prec = 200;
 let modR = [];
@@ -41,6 +41,7 @@ function setup() {
   background(255)
   slider = document.getElementById("myRange");
 sliderVal = slider.value;
+chosenImg = bliss;
 blissId = document.getElementById("bl");
 vaporId = document.getElementById("va");
 nixId = document.getElementById("nix");
@@ -83,6 +84,7 @@ function chooseImg() {
   chosenImg.loadPixels();
   
   for(let i = 0; i <= chosenImg.pixels.length; i += prec){
+    console.log(i);
     modR[i/prec] = chosenImg.pixels[i];
     modG[i/prec] = chosenImg.pixels[i+1];
     modB[i/prec] = chosenImg.pixels[i+2];
@@ -112,9 +114,8 @@ helpme = "union";
 }
 
 function Runner() {
-  isRunning = true;
   prec = sliderVal;
   chooseImg();
-    document.getElementById('start').remove();
-
+  document.getElementById('start').remove();
+  isRunning = true;
 }
