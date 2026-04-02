@@ -114,7 +114,7 @@ helpme = "union";
 }
 
 function Runner() {
-  prec = sliderVal;
+  prec = int(sliderVal);
   chooseImg();
   document.getElementById('start').remove();
   isRunning = true;
