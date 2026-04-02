@@ -60,7 +60,7 @@ function draw() {
   background(220);
   image(chosenImg, 0, 0);
   for(let i = 0; i < prec; i++){
-    chosenImg.pixels[(i*4) + (prec * tick)] = 0;
+    chosenImg.pixels[(i*4) + (prec * tick)] = modR[tick];
     chosenImg.pixels[(i*4) + (prec * tick) + 1] = modG[tick];
     chosenImg.pixels[(i*4) + (prec * tick) + 2] = modB[tick];
   }
@@ -79,7 +79,7 @@ text("Image to Simplify: " + helpme, 200, 250);
 }
 function chooseImg() {
 
-  chosenImg.resize(width, height);
+  chosenImg.resize(800, 600);
   chosenImg.loadPixels();
   
   for(let i = 0; i <= chosenImg.pixels.length; i += prec){
@@ -114,7 +114,7 @@ helpme = "union";
 function Runner() {
   isRunning = true;
   prec = sliderVal;
-  chosenImg.loadPixels();
+  chooseImg();
     document.getElementById('start').remove();
 
 }
