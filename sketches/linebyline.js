@@ -43,7 +43,7 @@ function setup() {
   frameRate(150);
   background(255)
   textFont(font);
-  textSize(40);
+  textSize(60);
   textAlign(CENTER);
   slider = document.getElementById("myRange");
 sliderVal = slider.value;
@@ -80,8 +80,8 @@ function draw() {
 else{
     sliderVal = slider.value;
     background(255);
-text("Precision: " + sliderVal, 200, 180);
-text("Image to Simplify: " + helpme, 200, 240);
+text("Precision: " + sliderVal, 400, 80);
+text("Image to Simplify: " + helpme, 400, 160);
 }
 }
 function chooseImg() {
