@@ -23,10 +23,10 @@ let union;
 let helpme = "bliss";
 
 function preload() {
- // bliss = loadImage('Bliss.png');
- // vapor = loadImage("vaporwave.png");
- // nix = loadImage("nix.webp");
- // union = loadImage("OhioUnionFront.JPG");
+ bliss = loadImage('Bliss.png');
+ vapor = loadImage("vaporwave.png");
+ nix = loadImage("nix.webp");
+ union = loadImage("OhioUnionFront.JPG");
 }
 
 function setup() {
