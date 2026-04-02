@@ -60,7 +60,7 @@ function draw() {
     chosenImg.pixels[(i*4) + (prec * tick) + 2] = modB[tick];
   }
   chosenImg.updatePixels();
-  if(tick == (width * height * 4)/prec){
+  if(tick == (800 * 600 * 4)/prec){
     noLoop();
   }
   tick++;
