@@ -27,18 +27,24 @@ let blissId;
 let vaporId;
 let nixId;
 let unionId;
+let font;
 
 function preload() {
  bliss = loadImage('Bliss.png');
  vapor = loadImage("vaporwave.png");
  nix = loadImage("nix.webp");
  union = loadImage("OhioUnionFront.JPG");
+  font = loadFont("sketches/FENNESFONT.TTF");
+
 }
 
 function setup() {
   createCanvas(800, 600);
   frameRate(150);
   background(255)
+  textFont(font);
+  textSize(40);
+  textAlign(CENTER);
   slider = document.getElementById("myRange");
 sliderVal = slider.value;
 chosenImg = bliss;
@@ -74,8 +80,8 @@ function draw() {
 else{
     sliderVal = slider.value;
     background(255);
-text("Precision: " + sliderVal, 200, 200);
-text("Image to Simplify: " + helpme, 200, 250);
+text("Precision: " + sliderVal, 200, 180);
+text("Image to Simplify: " + helpme, 200, 240);
 }
 }
 function chooseImg() {
@@ -91,26 +97,31 @@ function chooseImg() {
   }
 }
 function Bliss(){
+if(!isRunning){
 helpme = "bliss";
   chosenImg = bliss;
 }
+}
 
 function Vaporwave() {
+  if(!isRunning){
 helpme = "vapor";
   chosenImg = vapor;
-
+  }
 }
 
 function Nix() {
+  if(!isRunning){
 helpme = "nix";
   chosenImg = nix;
-
+  }
 }
 
 function Union() {
+  if(!isRunning){
 helpme = "union";
   chosenImg = union;
-
+  }
 }
 
 function Runner() {
